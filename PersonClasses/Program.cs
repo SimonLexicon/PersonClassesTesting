@@ -1,4 +1,5 @@
 ﻿using System;
+using PersonClasses.Model;
 
 namespace PersonClasses
 {
@@ -6,11 +7,14 @@ namespace PersonClasses
     {
         static void Main(string[] args)
         {
+            ToDoIt todoit = new ToDoIt();
+
+
             Console.WriteLine("Hello World!");
-            Student stud1 = new Student();
-            Console.WriteLine("Student.IdCounter" + Student.IdCounter);
-            Student stud2 = new Student("Skövde Lexicon", 1999, "Doctor Specialist");
-            Console.WriteLine("Student.IdCounter"+Student.IdCounter);
+            Person stud1 = new Person();
+            Console.WriteLine("Person.IdCounter" + Person.IdCounter);
+            Person stud2 = new Person("Skövde Lexicon", 1999, "Doctor Specialist");
+            Console.WriteLine("Person.IdCounter"+Person.IdCounter);
 
             Console.WriteLine(stud1.Information());
             Console.WriteLine();

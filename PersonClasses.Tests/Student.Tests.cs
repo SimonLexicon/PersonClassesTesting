@@ -13,9 +13,9 @@ namespace PersonClasses.Tests
             int startYear = 2020;
             string major = "Computer Science";
 
-            Student testStudent = null;
+            Person testStudent = null;
 
-            testStudent = new Student(classroom, startYear, major);
+            testStudent = new Person(classroom, startYear, major);
 
             Assert.NotNull(testStudent);
             Assert.Equal(testStudent.Classroom, classroom);
@@ -32,7 +32,7 @@ namespace PersonClasses.Tests
 
     
             ArgumentException result = Assert.Throws<ArgumentException>(
-                () => new Student(classroom, startYear, major));
+                () => new Person(classroom, startYear, major));
 
             Assert.Equal("classroom needs to be a valid room.", result.Message);
 
@@ -50,9 +50,9 @@ namespace PersonClasses.Tests
             string classroom = "A2";
             string major = "Computer Science";
 
-            Student testStudent = null;
+            Person testStudent = null;
 
-            testStudent = new Student(classroom, startYear, major);
+            testStudent = new Person(classroom, startYear, major);
 
             Assert.NotNull(testStudent);
             Assert.Equal(testStudent.startYear, startYear);
