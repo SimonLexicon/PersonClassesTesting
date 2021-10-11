@@ -9,6 +9,6 @@ namespace PersonClasses.Data
         int i = 100;
         string test = "Testar string";
         float k = 200.0f;
-        string test = "testar string igen";
+        string testar = "testar string igen";
     }
 }
