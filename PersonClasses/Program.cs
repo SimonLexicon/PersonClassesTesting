@@ -45,6 +45,7 @@ namespace PersonClasses
                     if(container[i].Id == 1)
                     {
                         Console.WriteLine(container[i].startYear);
+
                     }
 
                 }
